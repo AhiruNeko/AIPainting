@@ -61,7 +61,7 @@ QQ群: 670194395
 
 **1. 使用模型直接生成**
 
-有的模型在训练时就依旧训练过一些热门角色, 例如NoobAI就包含[danbooru](Materials/danbooru_artist_webui.csv)中的角色
+有的模型在训练时就已经训练过一些热门角色, 例如NoobAI就包含[danbooru](Materials/danbooru_artist_webui.csv)中的角色
 
 对于这样的模型只需要直接在提示词里写上角色名, 作品名, 以及角色的简单外貌描述即可生成该角色的同人图
 
