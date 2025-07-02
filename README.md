@@ -35,12 +35,12 @@ QQ群: 670194395
 <img src="Materials/0.png" width=800>
 
 其中：
-- Checkpoint加载器(简易): 用于加载你的AI绘画基本模型, AI模型应放置于comfyUI文件夹下的models/checkpoints路径下
-- CLIP文本编码器: 用于输入正向提示词和反向提示词
-- 空Latent: 用于生成初始latent图像作为起点
-- K采样器: 用于控制噪声逐步去除过程的组件, 将随机或编码图像逐步变换为符合提示词的图像
-- VAE解码: 将处理完成的latent图像还原为可视图像
-- 保存图像: 保存图像至本地
+- **Checkpoint加载器(简易)**: 用于加载你的AI绘画基本模型, AI模型应放置于comfyUI文件夹下的models/checkpoints路径下
+- **CLIP文本编码器**: 用于输入正向提示词和反向提示词
+- **空Latent**: 用于生成初始latent图像作为起点
+- **K采样器**: 用于控制噪声逐步去除过程的组件, 将随机或编码图像逐步变换为符合提示词的图像
+- **VAE解码**: 将处理完成的latent图像还原为可视图像
+- **保存图像**: 保存图像至本地
 
 现在你就能搭建最简单的comfyUI工作流啦!
 
@@ -105,3 +105,5 @@ hitori gotou, blue eyes, cube hair ornament, hair between eyes, hair ornament, p
 black skirt, jacket, long sleeves, pants, pants under skirt, pink jacket, pink pants, pleated skirt, skirt, track jacket, track pants, track suit,
 ```
 因此, 在使用LoRA时需要输入这些触发词才能使LoRA发挥作用, 生成特定的角色或风格
+
+**总之, 找到能与你的checkpoint模型配合使用的LoRA模型后, 设置好LoRA参数并在提示词中输入触发词, 即可生成同人图**
