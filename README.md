@@ -48,7 +48,7 @@ QQ群: 670194395
 
 ### 检查你的checkpoint模型
 
-下载模型时一般会有一些参数需要注意, 这里以[civitai](civitai.com)为例:
+下载模型时一般会有一些参数需要注意, 这里以[civitai](https://civitai.com)为例:
 
 <img src="Materials/2.png" width=300>
 
@@ -88,7 +88,7 @@ LoRA(Low-Rank Adaptation)是一种高效微调大模型的方法, 常用于 AI �
 
 **这两个参数均可为负数, 为负数时将起到抑制的效果**
 
-不同的LoRA有不同的适用环境, 在下载时可以看见这些参数, 这里以[civitai](civitai.com)为例: 
+不同的LoRA有不同的适用环境, 在下载时可以看见这些参数, 这里以[civitai](https://civitai.com)为例: 
 
 <img src="Materials/3.png" width=300>
 
