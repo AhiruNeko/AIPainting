@@ -133,8 +133,10 @@ black skirt, jacket, long sleeves, pants, pants under skirt, pink jacket, pink p
 
 图生图技术可以迁移图片内容, 例如:
 
-<img src="Materials/6.jpg" width=300>
-<img src="Pictures/sfw_173.jpg" width=300>
+<a href="#">
+    <img src="Materials/6.jpg" width=300>
+    <img src="Pictures/sfw_173.jpg" width=300>
+</a>
 
 其中右图由左图经过图生图而来, 可以看到右图迁移了左图的姿势与背景, 但更改了角色, 而且也进行了画风重置
 
@@ -142,8 +144,10 @@ black skirt, jacket, long sleeves, pants, pants under skirt, pink jacket, pink p
 
 在图片出现一些错误(例如六指, 姿势不当)时, 或者在手动修图后出现P图痕迹时, 可以使用图生图技术进行修补, 例如:
 
-<img src="Materials/7.png" width=200>
-<img src="Pictures/sfw_219.jpg" width=200>
+<a href="#">
+    <img src="Materials/7.png" width=200>
+    <img src="Pictures/sfw_219.jpg" width=200>
+</a>
 
 其中右图由左图经过图生图而来, 其中左图的右脚是经过手动修理的, 可以看到由明显的P图痕迹, 所有将该图进行图生图重绘, 即可得到右图的无P图痕迹的版本
 
