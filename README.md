@@ -2,6 +2,8 @@
 
 QQ群: 670194395
 
+取图: https://github.com/AhiruNeko/AIPainting/tree/main/Pictures
+
 ## 快速开始
 
 ### AI绘画的基本原理是什么?
