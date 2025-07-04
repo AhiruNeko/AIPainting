@@ -154,3 +154,27 @@ black skirt, jacket, long sleeves, pants, pants under skirt, pink jacket, pink p
 其中右图由左图经过图生图而来, 其中左图的右脚是经过手动修理的, 可以看到有明显的P图痕迹, 所以将该图进行图生图重绘, 即可得到右图的无P图痕迹的版本
 
 **注意: 无论时画风重置, 内容迁移, 还是细节修补, 都需要适当降低K采样器的降噪值(例如设置为0.6)以保证不会丢失我们想保留的内容**
+
+## 进阶二: 画风调整
+
+**这里将以一个画风调整的实战为例, 使用NoobAI-XL(NAI-XL) V-Pred-1.0-Version模型, 一步步介绍如何调整画风**
+
+### STEP1: 确定你的画风调整方向
+
+首先不输入任何负面提示词与画风提示词, 仅输入图片内容相关的正面提示词, 生成一张模型默认风格的图片
+
+这里以一张波奇酱的正面照为例, K采样器参照ComfyUI的默认参数, 空Latent的大小设置为1024*1024, 在正面提示词中输入以下内容: 
+
+```
+1girl, solo, gotou hitori, pink hair, cube hair ornament, blue eyes, bangs, hair between eyes, long hair, pink jacket, track jacket, standing, looking at viewer, blush, shy, v, sky, cloud, wind, flying hair, sunshine, sunlight, side view, upper body, close-up,
+```
+
+运行后得到最原始的图像:
+
+<img src="Materials/8.jpg" width=200>
+
+可以看到这确实是波奇酱的图片, 不过画风过于粗糙, 需要进行调整.
+
+我们希望调整到以下画风:
+
+<img src="Materials/9.jpg" width=200>
