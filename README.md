@@ -163,18 +163,22 @@ black skirt, jacket, long sleeves, pants, pants under skirt, pink jacket, pink p
 
 首先不输入任何负面提示词与画风提示词, 仅输入图片内容相关的正面提示词, 生成一张模型默认风格的图片
 
-这里以一张波奇酱的正面照为例, K采样器参照ComfyUI的默认参数, 空Latent的大小设置为1024*1024, 在正面提示词中输入以下内容: 
+这里以一张波奇酱的正面照为例, K采样器参照ComfyUI的默认参数, 空Latent的大小设置为1024*1536, 在正面提示词中输入以下内容: 
 
 ```
 1girl, solo, gotou hitori, pink hair, cube hair ornament, blue eyes, bangs, hair between eyes, long hair, pink jacket, track jacket, standing, looking at viewer, blush, shy, v, sky, cloud, wind, flying hair, sunshine, sunlight, side view, upper body, close-up,
 ```
 
-运行后得到最原始的图像:
+运行后得到最原始的图像(左图), 可以看到这确实是波奇酱的图片, 不过画风过于粗糙, 需要进行调整. 我们希望调整到右图的画风
 
-<img src="Materials/8.jpg" width=200>
 
-可以看到这确实是波奇酱的图片, 不过画风过于粗糙, 需要进行调整.
+<a href="#">
+    <img src="Materials/8.jpg" width=200>
+    <img src="Materials/9.jpg" width=200>
+</a>
 
-我们希望调整到以下画风:
 
-<img src="Materials/9.jpg" width=200>
+
+
+
+
