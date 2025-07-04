@@ -255,7 +255,7 @@ tianliang_duohe_fangdongye, ask \(askzy\), ciloranko, sho_(sho_lwlw),
 year 2023, masterpiece, expressive, depth of field, blurry background, dynamic lighting, light particle, best quality, very aesthetic, highres, absurdres
 ```
 
-生成以下看看效果:
+生成一下看看效果:
 
 <img src="Materials/12.jpg" width=200>
 
