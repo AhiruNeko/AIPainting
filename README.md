@@ -186,9 +186,9 @@ black skirt, jacket, long sleeves, pants, pants under skirt, pink jacket, pink p
 于是, 我们将这些词放在提示词末尾, 得到新的正面提示词:
 
 ```
-1girl,solo, gotou hitori, pink hair, cube hair ornament, blue eyes, bangs, hair between eyes, long hair, pink jacket, track jacket, standing,looking at viewer, blush, shy,v, sky, cloud, wind, flying hair,sunshine,sunlight,side view, upper body,close-up,
+1girl, solo, gotou hitori, pink hair, cube hair ornament, blue eyes, bangs, hair between eyes, long hair, pink jacket, track jacket, standing, looking at viewer, blush, shy, v, sky, cloud, wind, flying hair, sunshine, sunlight, side view, upper body, close-up,
 
-year 2023,masterpiece,expressive,depth of field,blurry background,dynamic lighting,light particle, best quality, very aesthetic, highres, absurdres
+year 2023, masterpiece, expressive, depth of field, blurry background, dynamic lighting, light particle, best quality, very aesthetic, highres, absurdres
 ```
 
 **2. 负面提示词**
@@ -244,3 +244,54 @@ error fingers, six fingers, lowres, bad anatomy, blurry, (worst quality:1.8), lo
     <img src="Materials/ciloranko.jpg" width=200>
     <img src="Materials/sho.jpg" width=500>
 </a>
+
+我们直接将这四个画师的名字加到正面提示词的开头:
+
+```
+tianliang_duohe_fangdongye, ask \(askzy\), ciloranko, sho_(sho_lwlw),
+
+1girl, solo, gotou hitori, pink hair, cube hair ornament, blue eyes, bangs, hair between eyes, long hair, pink jacket, track jacket, standing, looking at viewer, blush, shy, v, sky, cloud, wind, flying hair, sunshine, sunlight, side view, upper body, close-up,
+
+year 2023, masterpiece, expressive, depth of field, blurry background, dynamic lighting, light particle, best quality, very aesthetic, highres, absurdres
+```
+
+生成以下看看效果:
+
+<img src="Materials/12.jpg" width=200>
+
+可以看到已经有这四位画师风格的雏形了. 接下来可以适当微调各个画师的权重:
+
+```
+tianliang_duohe_fangdongye, (ask \(askzy\):0.6), ciloranko, (sho_(sho_lwlw):0.8),
+
+1girl, solo, gotou hitori, pink hair, cube hair ornament, blue eyes, bangs, hair between eyes, long hair, pink jacket, track jacket, standing, looking at viewer, blush, shy, v, sky, cloud, wind, flying hair, sunshine, sunlight, side view, upper body, close-up,
+
+year 2023, masterpiece, expressive, depth of field, blurry background, dynamic lighting, light particle, best quality, very aesthetic, highres, absurdres
+```
+
+生成后得到以下图片:
+
+<img src="Materials/13.jpg" width=200>
+
+通过与我们的目标画风对比, 我们可以发现现在的风格有点过于"浓"了, 主要表现在:
+- 对比度, 饱和度过高
+- 轮廓线过粗
+因此需要进一步调整
+
+### STEP5: 使用LoRA进行微调
+
+由于饱和度, 对比度, 以及轮廓线粗细存在问题, 我们就使用这三个LoRA进行调整: 
+
+- **add_contrast_XL.safetensors**(用于加对比度)
+- **add_saturation_XL.safetensors**(用于加饱和度)
+- **outline_xl_kohaku_delta_spv5x.safetensors**(用于加粗轮廓线)
+
+因为我们需要降低对比度, 降低饱和度, 把轮廓线变细, 因此三个LoRA的模型强度都应该调整为负数, 这里分别调整为 **-2**, **-1**, **-1**
+
+得到新的工作流, 如图所示:
+
+<img src="Materials/14.png" width=800>
+
+运行后即可得到最终的目标画风:
+
+<img src="Materials/9.jpg" width=300>
