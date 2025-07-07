@@ -295,3 +295,23 @@ year 2023, masterpiece, expressive, depth of field, blurry background, dynamic l
 运行后即可得到最终的目标画风:
 
 <img src="Materials/9.jpg" width=300>
+
+## 进阶三: 提示词书写
+
+**1. 标签式的提示词书写方法**
+
+<img src="Materials/9.jpg" width=300>
+
+在之前的案例中, 为了得到这么一张图片, 我们需要书写提示词, 例如, 在正面提示词中用一段话描述这张图片的内容和画风:
+
+```
+tianliang_duohe_fangdongye, (ask \(askzy\):0.6), ciloranko, (sho_(sho_lwlw):0.8),
+
+1girl, solo, gotou hitori, pink hair, cube hair ornament, blue eyes, bangs, hair between eyes, long hair, pink jacket, track jacket, standing, looking at viewer, blush, shy, v, sky, cloud, wind, flying hair, sunshine, sunlight, side view, upper body, close-up,
+
+year 2023, masterpiece, expressive, depth of field, blurry background, dynamic lighting, light particle, best quality, very aesthetic, highres, absurdres
+```
+
+可以发现, 在写提示词时, 都是采用标签式的书写方法来描述图片的, 而不是采用整句.
+
+然而, 标签化的书写还是需要规范化的, 各种内容有各种**特定的标签**. 例如, 想描述一个男的站在两个女的中间的画面, 使用`boy betweem girls`可能难以得到较好的效果, 应该使用`girl sandwich`这个特定的标签来描述.
