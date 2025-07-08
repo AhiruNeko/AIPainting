@@ -313,3 +313,29 @@ year 2023, masterpiece, expressive, depth of field, blurry background, dynamic l
 可以发现, 在写提示词时, 都是采用标签式的书写方法来描述图片的, 而不是采用整句.
 
 然而, 标签化的书写还是需要规范化的, 各种内容有各种**特定的标签**. 例如, 想描述一个男的站在两个女的中间的画面, 使用`boy betweem girls`可能难以得到较好的效果, 应该使用`girl sandwich`这个特定的标签来描述.
+
+标签式的提示词可以适当拓展, 例如使用更多的词语修饰某个标签使其变成符合自己要求的. 不过, 拓展过多可能导致效果不佳.
+
+**2. 如何学习标签式提示词?**
+
+- 可以去[danbooru](https://danbooru.donmai.us/)上看看别人的作品, 这些作品边上会显示对应的种种标签
+- 利用提示词网站(例如[qpipi](https://prompt.qpipi.com/)), 寻找自己需要的标签, 生成所需提示词
+- 利用提示词反推工具得到一些作品的提示词. 在ComfyUI中, 提示词反推工作流的搭建如下:
+
+<img src="Materials/15.png" width=800>
+
+运行后即可根据图片反推提示词
+
+**3. 提示词分类**
+
+在生成一张质量较好的图片的时候, 提示词需要包含以下几个方面:
+
+- 画风及质量描述, 例如: `masterpiece``ciloranko``high quality`
+- 角色整体情况, 例如: `1girl``solo``2boys`
+- 角色外貌, 例如: `pink hair``blue eyes``long hair`
+- 角色服装及配件, 例如: `white shirt``grey skirt``thighhighs`
+- 角色动作及表情, 例如: `blush``shy``smile`
+- 背景及环境, 例如: `white background``beach``indoors`
+- 拍摄角度, 例如: `close-up``straight-on``side view`
+
+包含这些方面的提示词就能较好地引导AI生成符合我们预期的图片了
