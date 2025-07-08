@@ -300,9 +300,7 @@ year 2023, masterpiece, expressive, depth of field, blurry background, dynamic l
 
 **1. 标签式的提示词书写方法**
 
-<img src="Materials/9.jpg" width=300>
-
-在之前的案例中, 为了得到这么一张图片, 我们需要书写提示词, 例如, 在正面提示词中用一段话描述这张图片的内容和画风:
+在之前的案例中, 为了生成一张图片, 我们需要书写提示词, 例如, 在正面提示词中用一段话描述这张图片的内容和画风:
 
 ```
 tianliang_duohe_fangdongye, (ask \(askzy\):0.6), ciloranko, (sho_(sho_lwlw):0.8),
