@@ -330,12 +330,12 @@ year 2023, masterpiece, expressive, depth of field, blurry background, dynamic l
 
 在生成一张质量较好的图片的时候, 提示词需要包含以下几个方面:
 
-- 画风及质量描述, 例如: `masterpiece``ciloranko``high quality`
-- 角色整体情况, 例如: `1girl``solo``2boys`
-- 角色外貌, 例如: `pink hair``blue eyes``long hair`
-- 角色服装及配件, 例如: `white shirt``grey skirt``thighhighs`
-- 角色动作及表情, 例如: `blush``shy``smile`
-- 背景及环境, 例如: `white background``beach``indoors`
-- 拍摄角度, 例如: `close-up``straight-on``side view`
+- 画风及质量描述, 例如: `masterpiece` `ciloranko` `high quality`
+- 角色整体情况, 例如: `1girl` `solo` `2boys`
+- 角色外貌, 例如: `pink hair` `blue eyes` `long hair`
+- 角色服装及配件, 例如: `white shirt` `grey skirt` `thighhighs`
+- 角色动作及表情, 例如: `blush` `shy` `smile`
+- 背景及环境, 例如: `white background` `beach` `indoors`
+- 拍摄角度, 例如: `close-up` `straight-on` `side view`
 
 包含这些方面的提示词就能较好地引导AI生成符合我们预期的图片了
