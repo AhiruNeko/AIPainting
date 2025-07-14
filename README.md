@@ -310,11 +310,11 @@ tianliang_duohe_fangdongye, (ask \(askzy\):0.6), ciloranko, (sho_(sho_lwlw):0.8)
 year 2023, masterpiece, expressive, depth of field, blurry background, dynamic lighting, light particle, best quality, very aesthetic, highres, absurdres
 ```
 
-可以发现, 在写提示词时, 都是采用标签式的书写方法来描述图片的, 而不是采用整句.
+可以发现, 在写提示词时, 都是采用标签式的书写方法来描述图片的, 而不是采用整句或较长的短语.
 
-然而, 标签化的书写还是需要规范化的, 各种内容有各种**特定的标签**. 例如, 想描述一个男的站在两个女的中间的画面, 使用`boy betweem girls`可能难以得到较好的效果, 应该使用`girl sandwich`这个特定的标签来描述.
+然而, 标签化的书写还是需要规范化的, 各种内容有各种**特定的标签**. 例如, 想描述**洞洞鞋**, 使用`shoes with lots of holes`可能难以得到较好的效果, 应该使用`crocs`这个特定的标签来描述.
 
-标签式的提示词可以适当拓展, 例如使用更多的词语修饰某个标签使其变成符合自己要求的. 不过, 拓展过多可能导致效果不佳.
+标签式的提示词可以适当拓展, 例如使用更多的词语修饰某个标签(例如`white crocs`)使其变成符合自己要求的. 不过, 拓展过多可能导致效果不佳.
 
 **2. 如何学习标签式提示词?**
 
