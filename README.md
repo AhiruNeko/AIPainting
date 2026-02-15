@@ -1,4 +1,4 @@
-# 使用[ComfyUI](https://github.com/comfyanonymous/ComfyUI): 从零开始~~制作涩图~~AI绘画
+# 使用[ComfyUI](https://github.com/comfyanonymous/ComfyUI): 从零开始AI绘画
 
 QQ群: 670194395
 
